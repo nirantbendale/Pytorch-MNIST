@@ -1,4 +1,4 @@
-# Chapter-wise Description of the Project
+# Neural Network model for image detection
 
 ## Chapter 1: Introduction
 The project begins with the import of essential libraries such as Torch, TorchVision, Matplotlib, and Torch's neural network modules. It defines a simple neural network architecture using PyTorch's `nn.Module` for classifying hand-written digits from the MNIST dataset.
