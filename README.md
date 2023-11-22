@@ -13,7 +13,9 @@ Here, the model is instantiated, and the loss function (Cross Entropy) and optim
 The MNIST dataset is loaded using TorchVision's `torchvision.datasets.MNIST`. This chapter covers how the dataset is downloaded, transformed using TorchVision's transforms (conversion to tensors and normalization), and loaded into train and test loaders using `torch.utils.data.DataLoader`.
 
 ## Chapter 5: Exploratory Data Analysis (EDA)
-EDA is conducted on the MNIST dataset. Sample images from the training data are displayed using Matplotlib's `plt.imshow()` function. Additionally, a bar plot showcases the frequency distribution of digits in the dataset, providing insights into the dataset's composition.
+EDA is conducted on the MNIST dataset. Sample images from the training data are displayed using Matplotlib's `plt.imshow()` function. Additionally, a bar plot showcases the frequency distribution of digits in the dataset, providing insights into the dataset's composition. \
+![grid1](nn-grid1.png) \
+![barplot](nn-bar.png)
 
 ## Chapter 6: Model Training
 The training process is detailed in this chapter. The model is trained over multiple epochs using a loop. Within each epoch, the training loader is iterated through batches, and the model parameters are optimized using backpropagation. Loss computation, backward propagation, and optimizer updates are performed to enhance the model's accuracy.
@@ -23,8 +25,10 @@ This section evaluates the trained model's performance on the test dataset. Test
 
 ## Chapter 8: Visualization of Test Results
 The model's predictions on the test set are visualized in this chapter. The first 12 images from the test set are plotted along with their predicted and actual labels, aiding in visually assessing the model's performance.
+![grid2](nn-grid2.png)
 
 ## Chapter 9: Accuracy Calculation
-The accuracy of the trained model on the test set is computed. The code snippet calculates the overall accuracy by comparing predicted labels with ground truth labels, providing a percentage value indicating the model's predictive performance.
+The accuracy of the trained model on the test set is computed. The code snippet calculates the overall accuracy by comparing predicted labels with ground truth labels, providing a percentage value indicating the model's predictive performance. \
+The model performance was calculated to be 97%.
 
 Each chapter in this project serves a distinct purpose, collectively contributing to the understanding, implementation, training, evaluation, and visualization of a neural network for digit classification using the MNIST dataset.
